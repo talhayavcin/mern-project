@@ -29,7 +29,7 @@ function Header() {
             </button>   
           </li>) : (
           <>
-            <li>
+          <li>
             <Link to='/login'>
               <FaSignInAlt /> Login
             </Link>

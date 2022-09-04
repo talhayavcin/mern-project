@@ -5,7 +5,7 @@ const API_URL = 'api/goals/'
 const createGoal = async(goalData, token) => {
   const config = {
     headers: {
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${token}`,
     }
   }
 
@@ -33,7 +33,7 @@ const getGoals = async(token) => {
       }
     }
   
-    const response = await axios.get(API_URL + goalId, config)
+    const response = await axios.delete(API_URL + goalId, config)
   
     return response.data
 }   
